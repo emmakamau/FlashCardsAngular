@@ -13,6 +13,11 @@ font-family: 'Montserrat', sans-serif;
 body{
     font-family: 'Montserrat', sans-serif;
     padding: 1vh 2vh;
+    background-color: #FAFDD6 !important;
+}
+
+p{
+    font-weight: 700;
 }
 
 .main-heading{
@@ -23,4 +28,5 @@ body{
 .card-title{
     font-family: 'Lora', serif;
     text-align: center;
+    font-size: 3em;
 }

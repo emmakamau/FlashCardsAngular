@@ -1,6 +1,7 @@
 .card{
     max-height: 100vh;
-    min-height: 50vh;
+    min-height: 20vh;
+    background-color: #E4E9BE !important;
 }
 
 .card-img-top{
