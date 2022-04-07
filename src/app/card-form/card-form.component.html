@@ -6,7 +6,7 @@
         <input type="text" class="form-control" id="title" placeholder="Enter title" [(ngModel)]="newCard.title"
             name="title" #title="ngModel">
         <div [hidden]="title.valid || title.pristine" class="alert alert-danger">
-            <p>Title is required</p>
+            <p>A title is required</p>
         </div>
     </div>
     <div class="form-group">

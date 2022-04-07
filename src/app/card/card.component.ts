@@ -8,11 +8,11 @@ import { Card } from '../card'
 })
 export class CardComponent implements OnInit {
   cards:Card[] = [
-    new Card(1,'Components','Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',5,1),
-    new Card(2,'Directives','Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',7,3),
-    new Card(3,'Pipes','Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.',12,5),
-    new Card(4,'Modules','Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ',2,9),
-    new Card(5,'Data-binding','Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',9,4),
+    new Card(1,'Components','Angular puts everything in the user interface into self-contained components. A component controls one or more sections on the screen called a view.',5,1),
+    new Card(2,'Directives','Angular templates are dynamic. When Angular renders them, it transforms the DOM according to the instructions given by directives.There are two kinds of directives: structural and attribute directives',7,3),
+    new Card(3,'Pipes','In Angular, a pipe takes in data as input and transforms it into the desired output. ',12,5),
+    new Card(4,'Modules','Angular applications follow a modular structure. An angular app will have one or more modules, each dedicated to a single purpose. Typically, a module would contain all the code needed for one piece of functionality in your application.',9,5),
+    new Card(5,'Data-binding','Angular supports data binding, a mechanism for coordinating parts of a template with parts of a component. We add binding markup to the Angular supports data binding, a mechanism for coordinating parts of a template with parts of a component.',9,4),
   ]
 
   toggleDetails(index){
@@ -25,7 +25,7 @@ export class CardComponent implements OnInit {
   }
 
   downVoteCard(index){
-      var down=this.cards[index].downVote-1;
+      var down=this.cards[index].downVote+1;
       this.cards[index].downVote=down;
   }
 
