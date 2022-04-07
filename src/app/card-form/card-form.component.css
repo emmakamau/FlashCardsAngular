@@ -8,3 +8,13 @@ form{
     margin: 2vh 0;
 }
 
+.form-btn{
+    background-color: #A2B38B !important;
+    color: black;
+    font-weight: 800;
+    border: #E4E9BE 1px solid;
+    width: 30%;
+    margin: 0 auto;
+}
+
+

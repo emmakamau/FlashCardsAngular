@@ -7,8 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CardFormComponent implements OnInit {
 
-  constructor() { }
+  newCard = new Card(0,"","",0,0);
 
+  constructor() { }
   ngOnInit(): void {
   }
 
