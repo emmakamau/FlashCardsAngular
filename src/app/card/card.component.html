@@ -1,36 +1,12 @@
 
 <h1 class="main-heading">LEARN ANGULAR THE EASY WAY</h1>
 <div class="row">
-    <div class="col-sm-4">
+    <div class="col-sm-4" *ngFor="let card of cards"> 
         <div class="card">
             <img class="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSplQen5QLLznj8xXO_NhGKfiBtdZzhYdDLTg&usqp=CAU" alt="Card image cap">
             <div class="card-body">
-                <h5 class="card-title">Components</h5>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                </p>
-            </div>
-        </div>
-    </div>
-    <div class="col-sm-4">
-        <div class="card">
-            <img class="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSplQen5QLLznj8xXO_NhGKfiBtdZzhYdDLTg&usqp=CAU" alt="Card image cap">
-            <div class="card-body">
-                <h5 class="card-title">Directives</h5>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                </p>
-            </div>
-        </div>
-    </div>
-    <div class="col-sm-4">
-        <div class="card">
-            <img class="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSplQen5QLLznj8xXO_NhGKfiBtdZzhYdDLTg&usqp=CAU" alt="Card image cap">
-            <div class="card-body">
-                <h5 class="card-title">Modules</h5>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                </p>
+                <h5 class="card-title">{{card.title}}</h5>
+                <p>{{card.description}}</p>
             </div>
         </div>
     </div>

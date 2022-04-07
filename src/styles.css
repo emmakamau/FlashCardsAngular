@@ -11,14 +11,16 @@ font-family: 'Montserrat', sans-serif;
 }
 
 body{
-    font-family: 'Montserrat', sans-serif; 
+    font-family: 'Montserrat', sans-serif;
     padding: 1vh 2vh;
 }
 
 .main-heading{
     font-family: 'Lora', serif;
+    text-align: center;
 }
 
 .card-title{
     font-family: 'Lora', serif;
+    text-align: center;
 }
