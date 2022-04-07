@@ -19,6 +19,16 @@ export class CardComponent implements OnInit {
     this.cards[index].showDescription = !this.cards[index].showDescription;
   }
 
+  upVoteCard(index){
+      var up=this.cards[index].upVote+1;
+      this.cards[index].upVote=up;
+  }
+
+  downVoteCard(index){
+      var down=this.cards[index].downVote-1;
+      this.cards[index].downVote=down;
+  }
+
   constructor() { }
   ngOnInit(): void {
   }

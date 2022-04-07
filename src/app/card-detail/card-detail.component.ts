@@ -11,15 +11,6 @@ export class CardDetailComponent implements OnInit {
   @Input() card: Card
   @Output() isComplete = new EventEmitter<boolean>();
 
-  upVote(complete:boolean){
-    this.isComplete.emit(complete);
-  }
-
-  downVote(complete:boolean){
-    this.isComplete.emit(complete);
-  }
-
-
   constructor() { }
   ngOnInit(): void {
   }
