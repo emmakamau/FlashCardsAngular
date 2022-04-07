@@ -30,3 +30,15 @@ p{
     text-align: center;
     font-size: 4vw;
 }
+
+@media only screen and (min-width:360px) {
+    .card-title{
+        font-size: 8vw;
+    }
+  }
+
+@media only screen and (min-width:820px) {
+    .card-title{
+        font-size: 4vw;
+    }
+  }

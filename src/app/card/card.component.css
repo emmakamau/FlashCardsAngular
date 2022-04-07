@@ -18,7 +18,16 @@
 }
 
 .btn{
-    font-weight: bold;
+    font-weight: bolder;
     color: white;
-    width: 12vw;
+}
+
+.btn-primary{
+    background-color: #A2B38B;
+    border: none;
+}
+
+.btn-danger{
+    background-color: #E6BA95;
+    border: none;
 }

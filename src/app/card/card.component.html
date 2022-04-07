@@ -12,8 +12,12 @@
                 <div *ngIf='card.showDescription'>
                     <app-card-detail [card]='card'></app-card-detail>
                     <div class="row">
-                        <div class="col-6"><button (click)= 'upVoteCard(i)' class="btn btn-primary">Upvote - {{card.upVote}}</button></div>
-                        <div class="col-6"><button (click)= 'downVoteCard(i)' class="btn btn-danger">Downvote - {{card.downVote}}</button></div>
+                        <div class="col-6">
+                            <button (click)= 'upVoteCard(i)' class="btn btn-primary">Upvote - {{card.upVote}}</button>
+                        </div>
+                        <div class="col-6">
+                            <button (click)= 'downVoteCard(i)' class="btn btn-danger">Downvote - {{card.downVote}}</button>
+                        </div>
                     </div>
                 </div>
             </div>
