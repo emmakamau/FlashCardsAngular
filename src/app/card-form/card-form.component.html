@@ -1,13 +1,21 @@
 <br>
-<form #cardForm='ngForm'>
+<form #cardForm='ngForm' (ngSubmit)='submitCard()'>
     <h1 class="main-heading">ADD MORE DEFINITIONS</h1>
     <div class="form-group">
         <label for="title">Title</label>
-        <input type="text" class="form-control" id="title" placeholder="Enter title">
+        <input type="text" class="form-control" id="title" placeholder="Enter title" [(ngModel)]="newCard.title"
+            name="title" #title="ngModel">
+        <div [hidden]="title.valid || title.pristine" class="alert alert-danger">
+            <p>Title is required</p>
+        </div>
     </div>
     <div class="form-group">
-        <label for="description">Password</label>
-        <input type="password" class="form-control" id="description" placeholder="Description">
+        <label for="description">Description</label>
+        <textarea type="" class="form-control" id="description" placeholder="Description"
+            [(ngModel)]="newCard.description" name="description" #description="ngModel"></textarea>
+        <div [hidden]="description.valid || description.pristine" class="alert alert-danger">
+            <p>Description cannot be empty</p>
+        </div>
     </div>
     <button type="submit" class="btn btn-primary form-btn">Submit</button>
 </form>

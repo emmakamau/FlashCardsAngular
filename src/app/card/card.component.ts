@@ -29,6 +29,12 @@ export class CardComponent implements OnInit {
       this.cards[index].downVote=down;
   }
 
+  addNewCard(card){
+    let cardLength = this.cards.length;
+    card.id = cardLength+1;
+    this.cards.push(card)
+  }
+
   constructor() { }
   ngOnInit(): void {
   }
