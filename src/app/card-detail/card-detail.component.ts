@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { Card } from '../card';
 
 @Component({
@@ -9,6 +9,16 @@ import { Card } from '../card';
 export class CardDetailComponent implements OnInit {
 
   @Input() card: Card
+  @Output() isComplete = new EventEmitter<boolean>();
+
+  upVote(complete:boolean){
+    this.isComplete.emit(complete);
+  }
+
+  downVote(complete:boolean){
+    this.isComplete.emit(complete);
+  }
+
 
   constructor() { }
   ngOnInit(): void {

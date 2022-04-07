@@ -3,7 +3,7 @@
 <div class="row">
     <div class="col-sm-4" *ngFor="let card of cards;let i = index"> 
         <div class="card">
-            <img class="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSplQen5QLLznj8xXO_NhGKfiBtdZzhYdDLTg&usqp=CAU" alt="Card image cap">
+            <img class="card-img-top" (click)='toggleDetails(i)' src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSplQen5QLLznj8xXO_NhGKfiBtdZzhYdDLTg&usqp=CAU" alt="Card image cap">
             <div class="card-body">
                 <h5 class="card-title" (click)='toggleDetails(i)'>{{card.title}}</h5>
                 <!--Selector for the goal-detail component

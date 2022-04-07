@@ -1,5 +1,6 @@
 .card{
-    max-height: 70vh;
+    max-height: 100vh;
+    min-height: 50vh;
 }
 
 .card-img-top{
@@ -9,3 +10,4 @@
 .col-sm-4{
     margin-top: 2vh;
 }
+
