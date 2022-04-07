@@ -1,0 +1,10 @@
+Flash Card
+You have learnt a lot since you start this journey of becoming a Programmer.  Wouldn't it be really cool if you could have somewhere to record all the new programming vocabularies (and their explanations) that you have encountered?
+
+Once you finish creating the to-do list project above and feel comfortable about the concepts you learnt so far, you can challenge yourself further and create a flashcard app. A flashcard app is a site where you create cards that contain new words you learnt and their explanations.
+
+Follow along with the lessons you've covered so far and add functionality similar to the Goals app with the following user stories as your guide:
+
+As a user, I would like to see the title of each flash card
+as a user, I want to be able to click on the card's title to see it's explanation/detail.
+As a user, I want to be able to hide a card detail when am done viewing them.
