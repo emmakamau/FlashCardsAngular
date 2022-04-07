@@ -1,1 +1,17 @@
 /* You can add global styles to this file, and also import other style files */
+/* 
+font-family: 'Lora', serif;
+font-family: 'Montserrat', sans-serif; 
+*/
+
+@import "~bootstrap/dist/css/bootstrap.css";
+
+*{
+    padding: 0;
+}
+
+body{
+    font-style: 'Montserrat', sans-serif;
+    padding: 1vh 2vh;
+}
+
